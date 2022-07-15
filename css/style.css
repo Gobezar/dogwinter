@@ -1,0 +1,789 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.background_blur {
+    background-image: url(../img/Эллипсы-1-min.jpg);
+    padding-top: 81px;
+    padding-bottom: 10px;
+}
+
+.background_rectangle {
+    background-color: rgba(255, 249, 249, 0.42);
+    border-radius: 50px;
+    padding-bottom: 50px;
+}
+
+/******************************************Переменные, стили для текста*********************************************/
+:root {
+    --black-color: #000000;
+    --gray-color: #5A5A5A;
+    --gray_color_2: #666666;
+    --blue-color: #74BCDC;
+    --white-color: #FFFFFF;
+}
+
+.text-h1 {
+    font-family: 'Flamenco', sans-serif;
+    font-weight: 400;
+    font-size: 95px;
+}
+
+.text-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.text-h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+
+}
+
+.text-p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+
+
+/* *******************************************Меню навигации************************************************* */
+
+.header {
+    min-height: 1080px;
+    background-image: url(../img/Main_background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_head {}
+
+.header_h1 {
+    padding-top: 223px;
+    padding-left: 108px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.header_h2_1 {
+    padding-left: 108px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D2E8FF;
+}
+
+.header_h2_2 {
+    padding-left: 341px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #D2E8FF;
+    margin-bottom: 130px;
+}
+
+.header_text-p_1 {
+    padding-left: 102px;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+
+}
+
+.header_text-p_2 {
+    padding-left: 376px;
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+    margin-bottom: 297px;
+}
+
+.header_icons {
+    display: flex;
+    padding-left: 99px;
+
+}
+
+.header_icon_vk {
+    margin-right: 38px;
+    width: 78px;
+    height: 78px;
+}
+
+.header_icon_inst {
+    margin-right: 38px;
+    width: 74px;
+    height: 74px;
+}
+
+.header_icon_tg {
+    width: 82px;
+    height: 82px;
+}
+
+.menu_head {}
+
+.burger {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    padding-top: 29px;
+    margin-top: 55px;
+    margin-right: 79px;
+    background-color: #f8f8f8;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger_line {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 6px;
+}
+
+.burger_line:last-child {
+    margin-bottom: 0;
+}
+.burger_line:first-child {
+    margin-bottom: 5px;
+}
+
+.offcanvas {
+    background-color: rgba(255, 255, 255, 0.2);
+
+
+}
+
+.offcanvas-end {}
+
+.offcanvas-header {
+    padding-top: 35px;
+    padding-left: 45px;
+}
+
+.text-reset {}
+
+.offcanvas-body {}
+
+.navbar-nav {
+    margin-top: 170px;
+    margin-left: 40px;
+    line-height: 110px;
+    letter-spacing: 0.03em;
+    position: absolute;
+
+}
+
+
+.nav-link {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Alegreya Sans';
+    font-weight: 300;
+    border-bottom: 1px solid transparent;
+
+}
+
+.nav-link:hover {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    transition-duration: 500ms;
+
+
+
+}
+
+.nav-link_road::before {
+    content: url(../img/icon_road_menu.png);
+    margin-right: 15px;
+    position: relative;
+    top: 10px;
+}
+
+.nav-link_contacts::before {
+    content: url(../img/icon_contacts_menu.png);
+    margin-right: 15px;
+    position: relative;
+    top: 12px;
+}
+
+.nav-link_mp::before {
+    content: url(../img/icon_mp_menu.png);
+    margin-right: 18px;
+    position: relative;
+    top: 13px;
+}
+
+.nav-link_photo::before {
+    content: url(../img/icon_photo_menu.png);
+    margin-right: 18px;
+    position: relative;
+    top: 15px;
+}
+
+/* *******************************************Про питомник, правила посещения***************************************** */
+
+
+.about {
+    padding-top: 81px;
+
+}
+
+.about_container {}
+
+.about_us {}
+
+.text-h3 {}
+
+.about_us_h3 {
+    text-align: center;
+    margin-bottom: 43px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+
+}
+
+.text-p {}
+
+.about_us_p {
+    margin-bottom: 56px;
+    margin-left: 31px;
+    max-width: 1029px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: var(--gray-color);
+    letter-spacing: 0.1em;
+    line-height: 50px;
+
+}
+
+.rules {}
+
+.rules_h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.rules_p {
+    max-width: 1029px;
+    letter-spacing: 0.1em;
+    color: var(--gray-color);
+    padding-left: 54px;
+    line-height: 50px;
+    display: block;
+}
+
+.continued {
+    color: var(--blue-color);
+    letter-spacing: 0.1em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    margin-bottom: 58px;
+    cursor: pointer;
+
+
+}
+
+.modal {
+    /* left: -16%; */
+
+}
+
+.fade {}
+
+.modal-dialog {}
+
+.about_modal-content {
+    /* width: 1100px;
+    height: auto;
+    border-radius: 1.3rem; */
+
+}
+
+.modal-header {}
+
+.about_modal-title {
+    color: var(--blue-color);
+    letter-spacing: 0.1em;
+}
+
+.btn-close {}
+
+.modal-body {}
+
+.btn-secondary {
+    background-color: var(--blue-color);
+}
+
+/* ********************************************Мероприятия********************************************************** */
+.events {
+    margin-bottom: 100px;
+}
+
+.text-h3 {}
+
+.events_h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.events_rectangle {
+    max-width: 982px;
+    max-height: 479px;
+    background-color: rgba(252, 252, 252, 0.54);
+    border-radius: 50px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+}
+
+.carousel {}
+
+.slide {}
+
+.carousel-indicators {}
+
+.active {}
+
+.carousel-inner {}
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-top: 29px;
+    padding-bottom: 42px;
+}
+
+.carousel_item_img {}
+
+.text-p {}
+
+.events_p {
+    text-align: center;
+    max-width: 319px;
+    max-height: 413px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+
+}
+
+.carousel-control-prev {}
+
+.carousel-control-prev-icon {
+    background: url(../img/carousel_control_prev_icon.png);
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {}
+
+.carousel-control-next {}
+
+.carousel-control-next-icon {
+    background: url(../img/carousel_control_next_icon.png);
+    background-repeat: no-repeat;
+}
+
+/* ***********************************************Фотогалерея***************************************************** */
+.gallery {
+    margin-bottom: 76px;
+}
+
+.gallery_h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.gallery_item_1 {}
+
+.gallery_item_1_rectangle,
+.gallery_item_2_rectangle,
+.gallery_item_3_rectangle {
+    max-width: 982px;
+    max-height: 479px;
+    background-color: rgba(252, 252, 252, 0.54);
+    border-radius: 50px;
+    margin: 0 auto;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+
+}
+
+.text-p {}
+
+.gallery-p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--gray-color);
+    letter-spacing: 0.1em;
+    line-height: 25px;
+}
+
+.gallery-item-img {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.gallery-item-img:hover {
+    opacity: 0.8;
+}
+
+.gallery_img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+
+}
+
+.gallery_img:hover {}
+
+.gallery_img_hover {}
+
+.gallery_img_button {}
+
+.gallery_img_button a {}
+
+.gallery_img_hover:hover .gallery_img_button {}
+
+.gallery_item_2 {}
+
+.gallery_item_2_rectangle {}
+
+.gallery_item_3 {}
+
+.gallery_item_3_rectangle {}
+
+.gallery_a {
+    cursor: pointer;
+}
+
+.modal {}
+
+.fade {}
+
+.modal-dialog {}
+
+.modal-content {}
+
+.modal-header {}
+
+.modal-title {}
+
+.text-p {}
+
+.btn-close {}
+
+.modal-body {}
+
+.gallery_img {}
+
+.modal-footer {}
+
+.btn {}
+
+.btn-secondary {}
+
+/* ***************************************Ответы на часто задаваемые вопросы****************************************** */
+
+.questions {
+    margin-bottom: 66px;
+}
+
+.text-h3 {}
+
+.questions_h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.questions_icon {
+    margin-right: 15px;
+}
+
+.accordion {}
+
+.accordion-item {
+    max-width: 782px;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    border-radius: 50px;
+}
+
+.accordion-item:first-of-type .accordion-button {}
+
+.accordion-header {}
+
+.accordion-button {
+    background: transparent;
+
+}
+
+.accordion-collapse {}
+
+.collapse {}
+
+.show {}
+
+.accordion-body {}
+
+.collapsed {}
+
+/* ****************************************Как добраться?******************************************************* */
+
+.road {}
+
+.text-h3 {}
+
+.road-h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-p {}
+
+.road-p {
+    text-align: center;
+    color: var(--gray-color);
+    letter-spacing: 0.1em;
+    line-height: 50px;
+}
+
+.map {
+    display: flex;
+    margin: 27px auto;
+    border: 1px solid #000;
+}
+
+.road_down_icon {
+    display: flex;
+    margin: 5px auto 27px;
+}
+
+.full_road_flex {
+    display: flex;
+    max-width: 743px;
+    margin: 0 auto 33px;
+}
+
+.full-road-p_1 {
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    width: 50%;
+    color: var(--gray-color);
+    margin-right: 5px;
+}
+
+.road_to_sosnovka_img {
+    width: 50%;
+}
+
+.full-road-p_2 {
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+
+    color: var(--gray-color);
+    text-align: right;
+}
+
+.full_road_flex_2 {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 743px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: 0 0 0 0;
+    border: none;
+}
+
+.button_full_road {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+/* *****************************************Контакты********************************************** */
+
+.contacts {}
+
+.text-h3 {}
+
+.contacts_h3 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--blue-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.text-p {}
+
+.contacts_p {
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.btn-up {
+    display: block;
+    width: 149px;
+    height: 95px;
+    margin: 25px auto;
+}
+
+.Up_img {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* ************************************Футер****************************************** */
+
+.footer {
+    background: rgb(16, 95, 131, 0.72) url(../img/footer_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid var(--gray-color);
+}
+
+.text-h1 {}
+
+.footer_h1 {
+    margin-top: 23px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+   
+}
+
+.text-p {}
+
+.footer_p {
+    text-align: center;
+    font-weight: 800;
+    font-size: 24spx;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    color: var(--white-color);
+    margin-bottom: 10px;
+    
+}
+.footer_p:last-child {
+    padding-bottom: 24px;
+    margin-bottom: 0;
+}
+.icons_footer_flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.icon_vk_footer {
+    margin-right: 61px;
+    max-width: 78px;
+    max-height: 78px;
+}
+
+.icon_inst_footer {
+    margin-right: 61px;
+    max-width: 74px;
+    max-height: 74px;
+}
+
+.icon_tg_footer {
+    max-width: 70px;
+    max-height: 70px;
+}
+.blue-color {
+    color: #1B127C;
+}
